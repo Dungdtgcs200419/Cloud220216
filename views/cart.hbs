@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<body
-    <h1>This is Cart/Order Page </h1>
+<body>
     <ul>
+        <h1>Cart / Order - HBS</h1>
         {{#each products}}
-        <li>{​​​​​​{​​​​​​@key}​​​​​​}​​​​​​: {​​​​​​{​​​​​​this.Ten}​​​​​​}​​​​​​ {​​​​​​{​​​​​​this.Gia}​​​​​​}​​​​​​ {​​​​​​{​​​​​​this.SoLuong}​​​​​​}​​​​​​ </li>
-
-
+        <li>{{@key}}: {{this.ten}} {{this.Gia}} {{this.SoLuong}}</li>
         {{/each}}
     </ul>
 </body>
