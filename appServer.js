@@ -6,7 +6,7 @@ var path = require("path");
 
 //
 const hostname = "localhost";
-const port = 4000;
+const port = process.env.PORT || 4000;
 solan = 0;
 
 //view engine setup
