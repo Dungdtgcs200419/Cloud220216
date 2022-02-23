@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const fs = require("fs");
-var path = require("path");
+const path = require("path");
 //--
 const hostname = 'localhost';
 const port = process.env.PORT || 4000;
 solan = 0;
+
+
 
 //view engine setup
 app.set("views", path.join(__dirname, "views")); //setting views directory for views.
